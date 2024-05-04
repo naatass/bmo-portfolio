@@ -39,7 +39,8 @@ header {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
-  margin-left: 10px;
+  display: flex;
+  margin: 0%;
 }
 
 a {
@@ -132,8 +133,9 @@ a {
 }
 
 .grid {
-  display: inline-table;
-  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
 }
 
@@ -165,12 +167,12 @@ a:hover {
 }
 
 .name:hover {
-  color: rgb(21, 0, 209);
+  color: #5bcdfa;
   transition: 500ms;
 }
 
 .bimu {
-  color: rgb(21, 0, 209);
+  color: #5bcdfa;
 }
 
 .name:hover .bimu {
@@ -184,7 +186,7 @@ a:hover {
 }
 
 .name:not(:hover) .bimu {
-  color: rgb(21, 0, 209);
+  color: #5bcdfa;
   transition: 500ms;
 }
 
@@ -257,8 +259,8 @@ a:hover {
   font-family: "Silkscreen", sans-serif;
   padding: 30px;
   background-color: #cdfad8;
-  margin-left: 700px;
-  margin-right: 700px;
+  margin-left: 500px;
+  margin-right: 500px;
   text-align: center;
   border-radius: 100px;
 }
@@ -281,4 +283,35 @@ a:hover {
 }
 .pcolor:hover {
   color: #0e835c;
+}
+
+.imgbmologo {
+  display: flex;
+  width: 70px;
+  margin-left: 10px;
+}
+
+.bmoskillsimg {
+  width: 250px;
+}
+
+.callme {
+  padding: 5px;
+  background-color: #0e835c;
+  color: #cdfad8;
+  border-radius: 20px;
+}
+
+.callme:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.callme:not(hover) {
+  transition: 500ms;
+}
+
+footer {
+  display: flex;
+  background-color: #0e835c;
 }

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BmoPortfólio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css"
+    />
 
     <link
       rel="stylesheet"
@@ -14,18 +18,24 @@
   </head>
   <body>
     <header>
-      <div class="titlescroll">Meu Portfólio</div>
+      <div>
+        <p class="titlescroll">
+          Meu Portfólio
+          <img class="imgbmologo" src="/assets/bmologo.png" alt="bimou" />
+        </p>
+      </div>
       <nav>
         <ul class="fds">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#skills"> Habilidades</a></li>
-          <li>Contato</li>
+          <li class="callme">Contato</li>
         </ul>
       </nav>
     </header>
+    <div id="home"></div>
     <main>
-      <section class="introduction" id="home">
+      <section class="introduction">
         <figure><img src="assets/bmo.gif" alt="bmo" class="gifbmo" /></figure>
         <div>
           <h1 class="name">
@@ -41,7 +51,8 @@
           </p>
         </div>
       </section>
-      <article class="aboutme" id="about">
+      <div id="about"></div>
+      <article class="aboutme">
         <div>
           <h1 class="paboutme">Sobre Mim</h1>
           <p>
@@ -67,234 +78,184 @@
           </p>
         </div>
       </article>
-      <section class="skillssection">
-        <div class="div-bg"></div>
-        <div>
-          <h1 id="skills" class="skillstitle">Habilidades</h1>
-          <ul class="skillslist">
-            <li class="skillbox grid">
-              <a
-                href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics"
-              >
-                <i class="devicon-html5-plain icons"></i>
-                HTML
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  HTML é a linguagem usada para criar e estruturar páginas da
-                  web. Ele utiliza tags para definir o conteúdo e a função de
-                  diferentes elementos na página, como textos, imagens e links.
-                  O HTML forma a base sobre a qual outras tecnologias web, como
-                  CSS e JavaScript, são aplicadas para estilizar e adicionar
-                  interatividade às páginas da web.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">
-                <i class="devicon-css3-plain icons"></i>
-                CSS
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  CSS, ou Cascading Style Sheets (Folhas de Estilo em Cascata),
-                  é uma linguagem de estilo usada para controlar a apresentação
-                  e o layout de páginas da web escritas em HTML. O CSS permite
-                  que os desenvolvedores definam cores, fontes, espaçamento,
-                  alinhamento e outros aspectos visuais de elementos HTML em uma
-                  página, separando assim o conteúdo da apresentação. Isso
-                  significa que o HTML é responsável pela estrutura e conteúdo
-                  da página, enquanto o CSS é responsável pela aparência e
-                  estilo. O CSS também permite a criação de layouts responsivos,
-                  que se adaptam a diferentes tamanhos de tela e dispositivos,
-                  melhorando assim a experiência do usuário em diversos
-                  contextos.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-              >
-                <i class="devicon-javascript-plain icons"></i>
-                JavaScript
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  JavaScript é uma linguagem de programação amplamente utilizada
-                  para criar interatividade em páginas da web. Ela permite aos
-                  desenvolvedores adicionar comportamentos dinâmicos às páginas,
-                  como manipulação de elementos HTML, interação com o usuário,
-                  requisições a servidores para atualizar conteúdo sem
-                  recarregar a página (AJAX), e muito mais. JavaScript é
-                  executado no navegador do usuário, tornando-o essencial para o
-                  desenvolvimento web moderno e a criação de experiências
-                  interativas e responsivas na web.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a href="https://developer.mozilla.org/en-US/docs/Glossary/Java">
-                <i class="devicon-java-plain icons"></i>
-                Java
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  Java é uma linguagem de programação conhecida por sua
-                  portabilidade e segurança. É usada em uma variedade de
-                  aplicações, desde aplicativos web até sistemas de
-                  gerenciamento de dados e jogos. Java é orientada a objetos e
-                  possui uma vasta biblioteca padrão, tornando-a ideal para o
-                  desenvolvimento de software modular e reutilizável.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Glossary/Python"
-              >
-                <i class="devicon-python-plain icons"></i>
-                Python
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  Python é uma linguagem de programação de alto nível conhecida
-                  por sua simplicidade e legibilidade. Ela é usada em uma ampla
-                  variedade de domínios, como desenvolvimento web, ciência de
-                  dados, automação de tarefas e aprendizado de máquina. Python
-                  suporta diferentes estilos de programação, incluindo
-                  programação orientada a objetos, programação imperativa e
-                  programação funcional. Sua sintaxe limpa e clara, juntamente
-                  com uma grande comunidade de desenvolvedores, tornam Python
-                  uma escolha popular para iniciantes e profissionais.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a href="https://ebaconline.com.br/blog/o-que-e-linguagem-c">
-                <i class="devicon-c-plain icons"></i>
-                C
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  A linguagem C é uma linguagem de programação eficiente e de
-                  baixo nível, criada por Dennis Ritchie na década de 1970. É
-                  amplamente usada em sistemas embarcados e no desenvolvimento
-                  de software de sistema, oferecendo controle direto sobre o
-                  hardware e portabilidade entre plataformas. Sua sintaxe
-                  simples e direta a torna uma escolha popular para projetos que
-                  exigem eficiência e controle preciso.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a
-                href="https://www.alura.com.br/artigos/csharp-linguagem-programacao-dotnet"
-              >
-                <i class="devicon-csharp-plain icons"></i>
-                C#
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  C# é uma linguagem de programação da Microsoft, parte da
-                  plataforma .NET. É usada principalmente para desenvolver
-                  aplicativos Windows, mas também é usada em jogos, aplicativos
-                  móveis e web. C# é orientada a objetos, segura e robusta, com
-                  verificação de tipos e coleta de lixo automática. Tem uma
-                  vasta biblioteca padrão e suporta bibliotecas de terceiros.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a href="https://blog.betrybe.com/linguagem-de-programacao/cpp/">
-                <i class="devicon-cplusplus-plain icons"></i>
-                C++
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  C++ é uma linguagem de programação de alto nível, eficiente e
-                  flexível, derivada da linguagem C. É usada para desenvolver
-                  uma ampla variedade de software, incluindo sistemas, jogos e
-                  aplicativos de desktop. C++ oferece controle direto sobre o
-                  hardware e suporta programação orientada a objetos. Sua
-                  sintaxe é semelhante à do C, facilitando a transição para os
-                  programadores familiarizados com essa linguagem.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a
-                href="https://www.lua.org/portugues.html#:~:text=Lua%20é%20linguagem%20estabelecida%20e,script%20mais%20usada%20em%20jogos."
-              >
-                <i class="devicon-lua-plain icons"></i>
-                Lua
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  Lua é uma linguagem de programação leve, rápida e poderosa,
-                  frequentemente usada em jogos, aplicativos embarcados e outras
-                  áreas que exigem customização e extensibilidade. Ela é
-                  conhecida por sua simplicidade, flexibilidade e eficiência, e
-                  é projetada para ser incorporada em outros programas como uma
-                  linguagem de script. Lua suporta programação procedural,
-                  orientada a objetos, funcional e data-driven. Sua sintaxe é
-                  simples e fácil de aprender, tornando-a popular entre
-                  desenvolvedores de diferentes níveis de experiência.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a href="https://coodesh.com/blog/dicionario/o-que-e-typescript/">
-                <i class="devicon-typescript-plain icons"></i>
-                TypeScript
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  TypeScript é uma linguagem de programação desenvolvida pela
-                  Microsoft que é um superconjunto tipado de JavaScript. Ela
-                  adiciona tipagem estática opcional e outros recursos ao
-                  JavaScript, permitindo aos desenvolvedores escrever código
-                  mais seguro, legível e robusto. TypeScript é compilado para
-                  JavaScript puro, o que significa que pode ser executado em
-                  qualquer lugar onde o JavaScript é suportado. Ele é
-                  frequentemente usado em grandes projetos e aplicações web
-                  complexas, onde a tipagem estática pode ajudar a evitar erros
-                  comuns e melhorar a manutenibilidade do código.
-                </p>
-              </details>
-            </li>
-            <li class="skillbox grid">
-              <a href="https://adventuretime.fandom.com/wiki/BMO">
-                <i class="devicon-github-original icons"></i>
-                GitHub
-              </a>
-              <details class="fading-arrow">
-                <summary></summary>
-                <p class="pcolor">
-                  GitHub é uma plataforma de hospedagem de código-fonte baseada
-                  em nuvem que permite que desenvolvedores e equipes colaborem
-                  no desenvolvimento de software. Ele utiliza o sistema de
-                  controle de versão Git, o que significa que os desenvolvedores
-                  podem rastrear as mudanças no código, colaborar em projetos e
-                  gerenciar o desenvolvimento de software de forma eficiente. O
-                  GitHub também oferece recursos como rastreamento de problemas,
-                  solicitações de pull, wikis e integração contínua, tornando-o
-                  uma ferramenta poderosa para o desenvolvimento de software em
-                  equipe.
-                </p>
-              </details>
-            </li>
-          </ul>
+      <div id="skills"></div>
+      <section class="bg-div1">
+        <div class="skillssection">
+          <div class="backgroundskills">
+            <h1 class="skillstitle">Habilidades</h1>
+            <ul class="skillslist">
+              <li class="skillbox grid">
+                <a
+                  href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                >
+                  <i class="devicon-html5-plain icons"></i>
+                  HTML
+                </a>
+                <details class="fading-arrow">
+                  <summary></summary>
+                  <p class="pcolor">
+                    HTML é a linguagem usada para criar e estruturar páginas da
+                    web. Ele utiliza tags para definir o conteúdo e a função de
+                    diferentes elementos na página, como textos, imagens e
+                    links. O HTML forma a base sobre a qual outras tecnologias
+                    web, como CSS e JavaScript, são aplicadas para estilizar e
+                    adicionar interatividade às páginas da web.
+                  </p>
+                </details>
+              </li>
+              <li class="skillbox grid">
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">
+                  <i class="devicon-css3-plain icons"></i>
+                  CSS
+                </a>
+                <details class="fading-arrow">
+                  <summary></summary>
+                  <p class="pcolor">
+                    CSS, ou Cascading Style Sheets (Folhas de Estilo em
+                    Cascata), é uma linguagem de estilo usada para controlar a
+                    apresentação e o layout de páginas da web escritas em HTML.
+                    O CSS permite que os desenvolvedores definam cores, fontes,
+                    espaçamento, alinhamento e outros aspectos visuais de
+                    elementos HTML em uma página, separando assim o conteúdo da
+                    apresentação. Isso significa que o HTML é responsável pela
+                    estrutura e conteúdo da página, enquanto o CSS é responsável
+                    pela aparência e estilo. O CSS também permite a criação de
+                    layouts responsivos, que se adaptam a diferentes tamanhos de
+                    tela e dispositivos, melhorando assim a experiência do
+                    usuário em diversos contextos.
+                  </p>
+                </details>
+              </li>
+              <li class="skillbox grid">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                >
+                  <i class="devicon-javascript-plain icons"></i>
+                  JavaScript
+                </a>
+                <details class="fading-arrow">
+                  <summary></summary>
+                  <p class="pcolor">
+                    JavaScript é uma linguagem de programação amplamente
+                    utilizada para criar interatividade em páginas da web. Ela
+                    permite aos desenvolvedores adicionar comportamentos
+                    dinâmicos às páginas, como manipulação de elementos HTML,
+                    interação com o usuário, requisições a servidores para
+                    atualizar conteúdo sem recarregar a página (AJAX), e muito
+                    mais. JavaScript é executado no navegador do usuário,
+                    tornando-o essencial para o desenvolvimento web moderno e a
+                    criação de experiências interativas e responsivas na web.
+                  </p>
+                </details>
+              </li>
+              <li class="skillbox grid">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Glossary/Java"
+                >
+                  <i class="devicon-java-plain icons"></i>
+                  Java
+                </a>
+                <details class="fading-arrow">
+                  <summary></summary>
+                  <p class="pcolor">
+                    Java é uma linguagem de programação conhecida por sua
+                    portabilidade e segurança. É usada em uma variedade de
+                    aplicações, desde aplicativos web até sistemas de
+                    gerenciamento de dados e jogos. Java é orientada a objetos e
+                    possui uma vasta biblioteca padrão, tornando-a ideal para o
+                    desenvolvimento de software modular e reutilizável.
+                  </p>
+                </details>
+              </li>
+              <li class="skillbox grid">
+                <a href="https://ebaconline.com.br/blog/o-que-e-linguagem-c">
+                  <i class="devicon-c-plain icons"></i>
+                  C
+                </a>
+                <details class="fading-arrow">
+                  <summary></summary>
+                  <p class="pcolor">
+                    A linguagem C é uma linguagem de programação eficiente e de
+                    baixo nível, criada por Dennis Ritchie na década de 1970. É
+                    amplamente usada em sistemas embarcados e no desenvolvimento
+                    de software de sistema, oferecendo controle direto sobre o
+                    hardware e portabilidade entre plataformas. Sua sintaxe
+                    simples e direta a torna uma escolha popular para projetos
+                    que exigem eficiência e controle preciso.
+                  </p>
+                </details>
+              </li>
+              <li class="skillbox grid">
+                <a
+                  href="https://www.alura.com.br/artigos/csharp-linguagem-programacao-dotnet"
+                >
+                  <i class="devicon-csharp-plain icons"></i>
+                  C#
+                </a>
+                <details class="fading-arrow">
+                  <summary></summary>
+                  <p class="pcolor">
+                    C# é uma linguagem de programação da Microsoft, parte da
+                    plataforma .NET. É usada principalmente para desenvolver
+                    aplicativos Windows, mas também é usada em jogos,
+                    aplicativos móveis e web. C# é orientada a objetos, segura e
+                    robusta, com verificação de tipos e coleta de lixo
+                    automática. Tem uma vasta biblioteca padrão e suporta
+                    bibliotecas de terceiros.
+                  </p>
+                </details>
+              </li>
+              <li class="skillbox grid">
+                <a
+                  href="https://coodesh.com/blog/dicionario/o-que-e-typescript/"
+                >
+                  <i class="devicon-typescript-plain icons"></i>
+                  TypeScript
+                </a>
+                <details class="fading-arrow">
+                  <summary></summary>
+                  <p class="pcolor">
+                    TypeScript é uma linguagem de programação desenvolvida pela
+                    Microsoft que é um superconjunto tipado de JavaScript. Ela
+                    adiciona tipagem estática opcional e outros recursos ao
+                    JavaScript, permitindo aos desenvolvedores escrever código
+                    mais seguro, legível e robusto. TypeScript é compilado para
+                    JavaScript puro, o que significa que pode ser executado em
+                    qualquer lugar onde o JavaScript é suportado. Ele é
+                    frequentemente usado em grandes projetos e aplicações web
+                    complexas, onde a tipagem estática pode ajudar a evitar
+                    erros comuns e melhorar a manutenibilidade do código.
+                  </p>
+                </details>
+              </li>
+              <li class="skillbox grid">
+                <a href="https://adventuretime.fandom.com/wiki/BMO">
+                  <i class="devicon-github-original icons"></i>
+                  GitHub
+                </a>
+                <details class="fading-arrow">
+                  <summary></summary>
+                  <p class="pcolor">
+                    GitHub é uma plataforma de hospedagem de código-fonte
+                    baseada em nuvem que permite que desenvolvedores e equipes
+                    colaborem no desenvolvimento de software. Ele utiliza o
+                    sistema de controle de versão Git, o que significa que os
+                    desenvolvedores podem rastrear as mudanças no código,
+                    colaborar em projetos e gerenciar o desenvolvimento de
+                    software de forma eficiente. O GitHub também oferece
+                    recursos como rastreamento de problemas, solicitações de
+                    pull, wikis e integração contínua, tornando-o uma ferramenta
+                    poderosa para o desenvolvimento de software em equipe.
+                  </p>
+                </details>
+              </li>
+              <img
+                class="bmoskillsimg"
+                src="/assets/bmoskills.gif"
+                alt="skillbimo"
+              />
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -321,7 +282,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <section>
       <div>
         <h1 class="fromthestart">
           <a href="https://www.youtube.com/watch?v=g4cD2MELXac">
@@ -329,6 +290,20 @@
           >
         </h1>
       </div>
+    </section>
+    <footer>
+      <h1>Portfólio do Bmo</h1>
+      <p>
+        © 2024 BMO Web Development Portfolio - Todos os direitos reservados.
+        <br />
+        Nathan Henrique Silva de Melo - Universidade Braz Cubas
+      </p>
+      <ul>
+        <li><i class="fi fi-brands-instagram"></i></li>
+        <li><i class="fi fi-brands-github"></i></li>
+        <li><i class="fi fi-brands-whatsapp"></i></li>
+        <li><i class="fi fi-brands-google"></i></li>
+      </ul>
     </footer>
   </body>
 </html>
