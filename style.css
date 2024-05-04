@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Gloria+Hallelujah&family=M+PLUS+1+Code:wght@100..700&family=Poppins:wght@800&family=Silkscreen&display=swap");
 
 body {
-  background-color: rgb(223, 246, 252);
   margin: 0%;
   font-family: "M PLUS 1 Code", monospace;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
   font-size: 18px;
-  background-image: url(assets/output-onlinepngtools.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top right;
+  background-color: #dff6ff;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 header {
