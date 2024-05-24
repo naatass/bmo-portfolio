@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1px 0;
+  z-index: 999;
 }
 
 .fds {
@@ -30,6 +31,7 @@ header {
   color: #0e835c;
   margin: 0%;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .titlescroll {
@@ -41,6 +43,8 @@ header {
   font-style: normal;
   display: flex;
   margin: 0%;
+  position: relative;
+  left: 20px;
 }
 
 a {
@@ -205,7 +209,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform-style: preserve-3d;
 }
 
 .container-projects .box-projects {
@@ -226,11 +229,11 @@ a:hover {
 
 .container-projects:hover > :not(:hover) {
   margin: 0 -20px;
-  transform: perspective(500px) rotateY(45deg) scale(0.95);
+  transform: perspective(500px) scale(0.95);
 }
 
 .container-projects .box-projects:hover ~ .box-projects {
-  transform: perspective(500px) rotateY(-45deg) scale(0.95);
+  transform: perspective(500px) scale(0.95);
 }
 
 .container-projects .box-projects:hover {
@@ -292,14 +295,25 @@ a:hover {
 }
 
 .bmoskillsimg {
+  display: flex inline;
+  position: relative;
+  justify-content: end;
+  top: 110px;
+  right: 40px;
+}
+
+.bmoimgwidth {
   width: 250px;
 }
 
 .callme {
-  padding: 5px;
+  padding: 10px;
   background-color: #0e835c;
   color: #cdfad8;
-  border-radius: 20px;
+  border-radius: 50px;
+  position: relative;
+  bottom: 10px;
+  right: 5px;
 }
 
 .callme:hover {
