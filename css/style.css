@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Gloria+Hallelujah&family=M+PLUS+1+Code:wght@100..700&family=Poppins:wght@800&family=Silkscreen&display=swap");
+
+body {
+  margin: 0%;
+  font-family: "M PLUS 1 Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #dff6ff;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+a {
+  text-decoration: none;
+  color: #0e835c;
+}
+
+a:hover {
+  color: aliceblue;
+  transition: 500ms;
+}
+
+.projects {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container-projects {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-projects .box-projects {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  transition: 0.5s;
+}
+
+.container-projects .box-projects .imgproject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-projects:hover > :not(:hover) {
+  margin: 0 -20px;
+  transform: perspective(500px) scale(0.95);
+}
+
+.container-projects .box-projects:hover ~ .box-projects {
+  transform: perspective(500px) scale(0.95);
+}
+
+.container-projects .box-projects:hover {
+  transform: perspective(500px) rotateY(0) scale(1.5);
+  z-index: 1000;
+}
+.titleprojects {
+  text-align: center;
+  color: #0e835c;
+  font-style: italic;
+  font-size: 60px;
+}
+
+.p-projects {
+  margin: 0%;
+  font-size: 25px;
+  color: rgb(41, 87, 94);
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.fading-arrow:hover {
+  color: aliceblue;
+  transition: 500ms;
+}
+
+.fading-arrow:not(:hover) {
+  color: #0e835c;
+}
+
+.pcolor {
+  color: #0e835c;
+}
+
+.pcolor:not(:hover) {
+  color: #0e835c;
+}
+.pcolor:hover {
+  color: #0e835c;
+}

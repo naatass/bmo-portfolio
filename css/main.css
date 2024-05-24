@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Gloria+Hallelujah&family=M+PLUS+1+Code:wght@100..700&family=Poppins:wght@800&family=Silkscreen&display=swap");
+
+body {
+  margin: 0%;
+  font-family: "M PLUS 1 Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #dff6ff;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.gifbmo {
+  height: 400px;
+  width: auto;
+  border: 10px solid rgba(245, 245, 245, 0.582);
+  border-radius: 500px;
+  position: relative;
+}
+
+.gifbmo:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.gifbmo:not(hover) {
+  transition: 500ms;
+}
+
+.introduction {
+  margin: 50px;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.name {
+  font-size: 35px;
+  color: #0e835c;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin: 0%;
+}
+.p1 {
+  margin: 0%;
+  font-size: 14px;
+  color: rgb(41, 87, 94);
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aboutme {
+  margin-top: 200px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 30px;
+  background-color: #cdfad8a1;
+  margin-left: 220px;
+  margin-right: 220px;
+  border-radius: 50px;
+}
+
+.paboutme {
+  margin: 0%;
+  font-size: 40px;
+  text-align: center;
+  color: #0e835c;
+  font-style: italic;
+  font-weight: 600;
+}
+.skillssection {
+  gap: 10px;
+  font-size: 40px;
+  color: #0e835c;
+}
+
+.grid {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.icons {
+  font-size: 100px;
+}
+
+.skillstitle {
+  margin-top: 200px;
+  color: #0e835c;
+  font-style: italic;
+  text-align: center;
+}
+
+.skillbox {
+  padding: 30px;
+  background-color: #cdfad8;
+  margin: 15px 0;
+}
+
+.name:hover {
+  color: #5bcdfa;
+  transition: 500ms;
+}
+
+.bimu {
+  color: #5bcdfa;
+}
+
+.name:hover .bimu {
+  color: #0e835c;
+  transition: 500ms;
+}
+
+.name:not(:hover) {
+  color: #0e835c;
+  transition: 500ms;
+}
+
+.name:not(:hover) .bimu {
+  color: #5bcdfa;
+  transition: 500ms;
+}
+
+.bmoskillsimg {
+  display: flex inline;
+  position: relative;
+  justify-content: end;
+  top: 110px;
+  right: 40px;
+}
+
+.bmoimgwidth {
+  width: 250px;
+}

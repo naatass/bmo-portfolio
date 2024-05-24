@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Gloria+Hallelujah&family=M+PLUS+1+Code:wght@100..700&family=Poppins:wght@800&family=Silkscreen&display=swap");
+
+body {
+  margin: 0%;
+  font-family: "M PLUS 1 Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #dff6ff;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+footer {
+  display: flex;
+  background-color: #0e835c;
+  flex-direction: column;
+  align-items: center;
+  color: #cdfad8;
+  border-radius: 2%;
+  margin-top: 100px;
+}
+.footer-list {
+  list-style: none;
+}
+
+.title-footer {
+  text-align: center;
+}
+
+.footer-contact {
+  list-style: none;
+  font-family: "Silkscreen", sans-serif;
+}
+
+.footer-fonttitle {
+  font-family: "Poppins", sans-serif;
+}
+
+.link-contact:hover {
+  color: #02462f;
+  transition: 500ms;
+}
+.link-contact {
+  color: #cdfad8;
+}
+
+.fromthestart {
+  justify-content: center;
+  font-family: "Silkscreen", sans-serif;
+  padding: 30px;
+  background-color: #cdfad8;
+  margin-left: 500px;
+  margin-right: 500px;
+  text-align: center;
+  border-radius: 100px;
+}

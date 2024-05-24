@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BmoPortfólio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css"
@@ -25,11 +28,11 @@
         </p>
       </div>
       <nav>
-        <ul class="fds">
+        <ul class="shortcuts">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#skills"> Habilidades</a></li>
-          <li class="callme">Contato</li>
+          <li class="callme"><a href="#contactscroll" class="linknav">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -249,22 +252,24 @@
                   </p>
                 </details>
               </li>
-              <li  class="bmoskillsimg">
-              <img class="bmoimgwidth"
-              src="/assets/bmoskills.gif"
-              alt="skillbimo"
-              />
+              <li class="bmoskillsimg">
+                <img
+                  class="bmoimgwidth"
+                  src="/assets/bmoskills.gif"
+                  alt="skillbimo"
+                />
               </li>
             </ul>
           </div>
         </div>
       </section>
     </main>
+    <article>
     <h1 class="titleprojects">Projetos</h1>
     <p class="p-projects">
       este é um pouquinho do meu trabalho! espero que gostem :p
     </p>
-    <section class="projects">
+    <figure class="projects">
       <div class="container-projects">
         <div class="box-projects">
           <img src="assets/project.gif" alt="bmou" class="imgproject" />
@@ -282,7 +287,8 @@
           <img src="assets/project5.gif" alt="bmou5" class="imgproject" />
         </div>
       </div>
-    </section>
+    </figure>
+  </article>
     <section>
       <div>
         <h1 class="fromthestart">
@@ -292,19 +298,35 @@
         </h1>
       </div>
     </section>
-    <footer>
-      <h1>Portfólio do Bmo</h1>
-      <p>
-        © 2024 BMO Web Development Portfolio - Todos os direitos reservados.
-        <br />
-        Nathan Henrique Silva de Melo - Universidade Braz Cubas
-      </p>
-      <ul>
-        <li><i class="fi fi-brands-instagram"></i></li>
-        <li><i class="fi fi-brands-github"></i></li>
-        <li><i class="fi fi-brands-whatsapp"></i></li>
-        <li><i class="fi fi-brands-google"></i></li>
+    <footer id="contactscroll">
+      <ul class="footer-list">
+        <li class="title-footer"><h1  class="footer-fonttitle"> Portfólio do Bmo </h1></li>
+        <li>
+          <p>
+            © 2024 BMO Web Development Portfolio - Todos os direitos reservados.
+            <br />
+            Nathan Henrique Silva de Melo - Universidade Braz Cubas
+          </p>
+        </li>
       </ul>
+        <ul class="footer-contact">
+        <li> <a class="link-contact" href="https://www.instagram.com/naatasskkk_/">
+          <i class="fi fi-brands-instagram"></i> @naatasskkk_
+          </a>
+        </li>
+        <li> <a class="link-contact" href="https://github.com/naatass">
+          <i class="fi fi-brands-github"></i> naatass
+          </a>
+        </li>
+        <li>  <a class="link-contact" href="https://w.app/xYMpAr">
+          <i class="fi fi-brands-whatsapp"></i> 11959464928
+          </a>
+        </li>
+        <li> <a class="link-contact" href="mailto:nathan.josy2013@gmail.com">
+          <i class="fi fi-brands-google"></i> nathan.josy2013@gmail.com
+          </a>
+        </li>
+      
     </footer>
   </body>
 </html>

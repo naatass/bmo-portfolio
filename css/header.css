@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Gloria+Hallelujah&family=M+PLUS+1+Code:wght@100..700&family=Poppins:wght@800&family=Silkscreen&display=swap");
+
+body {
+  margin: 0%;
+  font-family: "M PLUS 1 Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #dff6ff;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+header {
+  margin: 0%;
+  background-color: #d1fedc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 0;
+  z-index: 999;
+}
+
+.shortcuts {
+  font-size: 23px;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-weight: bold;
+  color: #0e835c;
+  margin: 0%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.titlescroll {
+  justify-content: start;
+  color: #0e835c;
+  font-size: 38px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  display: flex;
+  margin: 0%;
+  position: relative;
+  left: 20px;
+}
+
+.titlescroll:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.titlescroll:not(hover) {
+  transition: 500ms;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.imgbmologo {
+  display: flex;
+  width: 70px;
+  margin-left: 10px;
+}
+
+.callme {
+  padding: 10px;
+  background-color: #0e835c;
+  color: #cdfad8;
+  border-radius: 50px;
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+}
+
+.callme:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+  color: #cdfad8;
+}
+
+.callme:not(hover) {
+  transition: 500ms;
+  color: #cdfad8;
+}
+
+.linknav:hover {
+  color: #cdfad8;
+}
+
+.linknav:not(hover) {
+  color: #cdfad8;
+}
